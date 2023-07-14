@@ -1,0 +1,123 @@
+
+<!DOCTYPE html> 
+<!-- Comment: Document type declaration for HTML --> 
+<html lang="en"> 
+<!-- Comment: Opening HTML tag with language attribute set to English --> 
+<head> 
+  <!-- Comment: Head section of the HTML document --> 
+  <!-- Comment: Setting up the character encoding and viewport for responsive design --> 
+  <meta charset="UTF-8"> 
+  <!-- Comment: Meta tag for character encoding --> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Comment: Meta tag for responsive design --> 
+ 
+  <!-- Comment: Link to external CSS file for styling the webpage --> 
+  <link rel="stylesheet" href="Pavanass2.css"> 
+  <!-- Comment: External CSS file link --> 
+  <script src="Pavanass2.js"></script> 
+  <!-- Comment: External JavaScript file link --> 
+ 
+  <!-- Comment: Title for the webpage --> 
+  <title>Photo Gallery</title> 
+  <!-- Comment: Title of the webpage --> 
+ 
+  <!-- Comment: This is the main title for the photo gallery. --> 
+  <h1>Welcome to Pavan's Photos Gallery</h1> 
+  <!-- Comment: Main heading of the photo gallery --> 
+ 
+  <!-- Comment: This is an instruction for the users. --> 
+  <p>The images can be enlarged by clicking on them and added to favorites by scrolling down!</p> 
+  <!-- Comment: Instruction for users --> 
+ 
+  <!-- Comment: This is the container for the photo gallery. --> 
+  <div id="photo-gallery"> 
+  <!-- Comment: Container for the photo gallery --> 
+ 
+    <!-- Comment: This is a container for individual image containers. --> 
+    <div class="image-container"> 
+    <!-- Comment: Individual image container --> 
+ 
+      <!-- Comment: This is an image container with onclick event. --> 
+      <!-- Comment: The onclick event will call the openImage function and pass the image's src as a parameter. --> 
+      <!-- Comment: Each image container consists of an image and its title. --> 
+      <img src="vr3.jpg" alt="Image 1"> 
+      <!-- Comment: Image with alt attribute --> 
+      <p class="image-title">Vision</p> 
+      <!-- Comment: Title of the image --> 
+    </div> 
+ 
+    <!-- Comment: This is another image container with onclick event. --> 
+    <div class="image-container"> 
+    <!-- Comment: Another individual image container --> 
+      <img src="VR1.jpg" alt="Image 2"> 
+      <!-- Comment: Image with alt attribute --> 
+      <p class="image-title">Vision Pro</p> 
+      <!-- Comment: Title of the image --> 
+    </div> 
+ 
+    <!-- Comment: This is another image container with onclick event. --> 
+    <div class="image-container"> 
+    <!-- Comment: Another individual image container --> 
+      <img src="app5.jpg" alt="Image 3"> 
+      <!-- Comment: Image with alt attribute --> 
+      <p class="image-title">Apple</p> 
+      <!-- Comment: Title of the image --> 
+    </div> 
+ 
+    <!-- Comment: This is another image container with onclick event. --> 
+    <div class="image-container"> 
+    <!-- Comment: Another individual image container --> 
+      <img src="VR2.jpg" alt="Image 4"> 
+      <!-- Comment: Image with alt attribute --> 
+      <p class="image-title">Future</p> 
+      <!-- Comment: Title of the image --> 
+    </div> 
+ 
+  </div> 
+  <!-- Comment: End of photo gallery container --> 
+ 
+  <!-- Comment: This is a modal to display the selected image. --> 
+  <!-- Comment: The modal will be closed when the close button is clicked by calling the closeModal function. --> 
+  <!-- Comment: Users can add the selected image to favorites by clicking the add to favorites button, which calls the addToFavorites function. --> 
+  <div id="myModal" class="modal"> 
+  <!-- Comment: Modal for displaying selected image --> 
+    <span class="close" onclick="closeModal()">&times;</span> 
+    <!-- Comment: Close button for the modal --> 
+    <img class="modal-content" id="img01"> 
+    <!-- Comment: Modal content image --> 
+    <div id="caption"></div> 
+    <!-- Comment: Caption for the image --> 
+    <div id="buttonWrapper"> 
+      <button id="addFavorite" onclick="addToFavorites()">Add to favorites</button> 
+      <!-- Comment: Button to add the image to favorites --> 
+    </div> 
+  </div> 
+ 
+  <!-- Comment: This is a container for the favorites. --> 
+  <!-- Comment: Users' favorite images will be dynamically added here. --> 
+  <h2>Your Favorites:</h2> 
+  <!-- Comment: Heading for favorites section --> 
+  <div id="favorites"></div> 
+  <!-- Comment: Container for favorite images --> 
+ 
+  <!-- Comment: This is a horizontal rule, creates a thematic break in an HTML page. --> 
+  <hr> 
+  <!-- Comment: Horizontal rule for visual separation --> 
+ 
+  <!-- Comment: This is the footer of the my info containing the copyright and author's information. --> 
+  <footer> 
+  <!-- Comment: Footer section --> 
+    <center> 
+    <!-- Comment: Center aligns the content --> 
+      <h4>Student Name: Pavankumar Patel</h4> 
+      <!-- Comment: Student name --> 
+      <h4>Student #: 301299711</h4> 
+      <!-- Comment: Student number --> 
+      <h4>&copy;&nbsp;&nbsp;&nbsp;Copyright Pavankumar Patel - 301299711 - COMP125 - Winter 2023</h4> 
+      <!-- Comment: Copyright information --> 
+    </center> 
+  </footer> 
+</body> 
+<!-- Comment: End of the body section --> 
+</html>
+<!-- Comment: End of the HTML document -->

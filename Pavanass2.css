@@ -1,0 +1,131 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(120deg, #000000, #ffffff); /* Apple-themed gradient background */
+  overflow: hidden;
+  font-style:italic;
+  font-weight: bold;
+}
+
+#photo-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#photo-gallery .image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 240px;
+  margin: 20px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  border-radius: 20px; /* Slightly rounded corners */
+  border: 1px solid rgba(128, 128, 128, 0.2); /* Translucent gray border */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+#photo-gallery .image-container:hover {
+  transform: scale(1.05); /* Slight scaling on hover */
+}
+
+#photo-gallery img {
+  width: 80%;
+  height: 200px;
+  border-radius: 20px; /* Slightly rounded corners */
+  object-fit: cover; /* This ensures the image covers the full area */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.image-title {
+  margin: 10px 0 0 0;
+  transition: transform 0.5s ease;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(200, 200, 200, 0.6); /* Translucent gray background */
+}
+
+.modal-content {
+  margin: 15% auto; /* Centered vertically */
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow effect */
+  border-radius: 20px; /* Slightly rounded corners */
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#favorites img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 20px; /* Slightly rounded corners */
+  border: 1px solid rgba(128, 128, 128, 0.2); /* Translucent gray border */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.blur {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(200,200,200,0.6); /* Translucent gray background */
+  }
+  
+  #addFavorite {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #f44336; /* Red */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #addFavorite:hover {
+    background-color: #da190b; /* Darker red on hover */
+  }
